@@ -1,7 +1,12 @@
 /** CSS STYLE **/
  *,
  *::before,
- *::after {
+ *::after {  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
   --white-color: #fff;
   --light-white-color: #d7ccc0;
   --light-color: #f5f4f0;
@@ -11,40 +16,108 @@
   --light-dark-color: #908d8b;
   --brown-color: #b09a81;
   --blue-color: #1085c5;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
 }
-
+@font-face {
+  font-family: 'Neucha';
+  src: url('../assets/fonts/Neucha-Regular.ttf');
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Regular.ttf');
+}
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../assets/fonts/OpenSans-Bold.ttf');
+}
 body {
   font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
   font-size: 16px;
-  line-height: 1.6em;
+  line-height: 1.5em;
   color: var(--dark-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-
 h1, h2, h3 {
+  font-family: Neucha, sans-serif;
+  font-weight: 400;
   line-height: 1.2em;
-  font-family: 'Neucha', cursive;
 }
-
 h1 {
   font-size: 72px;
 }
-
 h2 {
   font-size: 60px;
 }
-
 h3 {
   font-size: 34px;
 }
-
 .container {
-  width: 1110px;
+  max-width: 1110px;
   margin: 0 auto;
 }
-
-section {
+header, section, footer {
   padding: 100px 0;
+}
+.orange-text {
+  color: var(--main-color);
+}
+.header {
+  position: relative;
+  width: 100%;
+  background-color: var(--light-color);
+  overflow: hidden;
+}
+.header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url('../images/background.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .1;
+}
+.header__title {
+  width: 100%;
+}
+.header__top {
+  position: relative;
+  display: flex;
+  margin-bottom: 185px;
+}
+.header__img {
+  position: absolute;
+  top: -45px;
+  right: -170px;
+  height: 525px;
+}
+.header__text-boxes {
+  display: flex;
+  column-gap: 30px;
+}
+
+.text-box {
+  width: 540px;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: 'Open Sans', sans-serif;
+}
+.mb-25 {
+  margin-bottom: 25px;
+}
+.header__link {
+  display: inline-block;
+  margin-top: 40px;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 26px;
+  background-color: var(--main-color);
+  color: var(--white-color);
 }
