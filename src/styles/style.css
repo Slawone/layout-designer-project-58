@@ -1,11 +1,12 @@
 /** CSS STYLE **/
- *,
- *::before,
- *::after {  
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
+
 :root {
   --white-color: #fff;
   --light-white-color: #d7ccc0;
@@ -17,107 +18,145 @@
   --brown-color: #b09a81;
   --blue-color: #1085c5;
 }
+
 @font-face {
-  font-family: 'Neucha';
-  src: url('../assets/fonts/Neucha-Regular.ttf');
+  font-family: Neucha;
+  src: url("../assets/fonts/Neucha-Regular.ttf");
 }
+
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../assets/fonts/OpenSans-Regular.ttf');
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Regular.ttf");
 }
+
 @font-face {
-  font-family: 'Open Sans';
-  src: url('../assets/fonts/OpenSans-Bold.ttf');
+  font-family: "Open Sans";
+  src: url("../assets/fonts/OpenSans-Bold.ttf");
 }
+
 body {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5em;
-  color: var(--dark-color);
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-h1, h2, h3 {
-  font-family: Neucha, sans-serif;
+
+  color: var(--dark-color);
+
   font-weight: 400;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.5em;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: 400;
+  font-family: Neucha, sans-serif;
   line-height: 1.2em;
 }
+
 h1 {
   font-size: 72px;
 }
+
 h2 {
   font-size: 60px;
 }
+
 h3 {
   font-size: 34px;
 }
+
 .container {
   max-width: 1110px;
   margin: 0 auto;
 }
-header, section, footer {
+
+header,
+section,
+footer {
   padding: 100px 0;
 }
+
 .orange-text {
   color: var(--main-color);
 }
+
 .header {
   position: relative;
+
   width: 100%;
-  background-color: var(--light-color);
+
   overflow: hidden;
+
+  background-color: var(--light-color);
 }
+
 .header::before {
-  content: '';
   position: absolute;
   top: 0;
+  right: 0;
   bottom: 0;
   left: 0;
-  right: 0;
-  background-image: url('../images/background.png');
+
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-size: cover;
-  opacity: .1;
+  opacity: 0.1;
+
+  content: "";
 }
-.header__title {
+
+.header-title {
   width: 100%;
 }
-.header__top {
+
+.header-top {
   position: relative;
+
   display: flex;
   margin-bottom: 185px;
 }
-.header__img {
+
+.header-img {
   position: absolute;
   top: -45px;
   right: -170px;
+
   height: 525px;
 }
-.header__text-boxes {
+
+.header-text-boxes {
   display: flex;
+
   column-gap: 30px;
 }
 
 .text-box {
   width: 540px;
-  font-size: 16px;
-  line-height: 26px;
+
   font-weight: 400;
-  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 26px;
 }
+
 .mb-25 {
   margin-bottom: 25px;
 }
-.header__link {
+
+.header-link {
   display: inline-block;
   margin-top: 40px;
-  text-decoration: none;
   padding: 12px 24px;
-  font-weight: 700;
-  text-transform: uppercase;
-  line-height: 26px;
-  background-color: var(--main-color);
+
   color: var(--white-color);
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  background-color: var(--main-color);
+
+  cursor: pointer;
 }
