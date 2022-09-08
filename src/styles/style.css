@@ -85,8 +85,15 @@ footer {
   color: var(--main-color);
 }
 
+.mt-20 {
+  margin-top: 20px;
+}
 .mt-30 {
   margin-top: 30px;
+}
+
+.mt-100 {
+  margin-top: 100px;
 }
 .p-24 {
   padding: 24px;
@@ -250,4 +257,40 @@ footer {
 .nav-link {
   display: block;
   text-decoration: none;
+}
+
+.ikea {
+  background-color: var(--light-color);
+  position: relative;
+}
+
+.ikea-top {
+  display: flex;
+  column-gap: 30px;
+}
+
+.ikea-suptitle {
+  font-family: Neucha, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  color: var(--light-dark-color);
+}
+
+.ikea-text {  
+  font-family: Neucha, sans-serif;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 41px;
+  color: var(--dark-color);
+}
+
+.ikea-bottom h4 {
+  background: var(--brown-color);
+  color: var(--white-color );
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  padding: 5px 10px;
 }
