@@ -98,6 +98,7 @@ footer {
 .p-24 {
   padding: 24px;
 }
+
 .background-img::before {
   position: absolute;
   top: 0;
@@ -264,12 +265,12 @@ footer {
   position: relative;
 }
 
-.ikea-top {
+.section-top {
   display: flex;
   column-gap: 30px;
 }
 
-.ikea-suptitle {
+.section-suptitle {
   font-family: Neucha, sans-serif;
   font-weight: 400;
   font-size: 24px;
@@ -277,7 +278,7 @@ footer {
   color: var(--light-dark-color);
 }
 
-.ikea-text {  
+.section-text {  
   font-family: Neucha, sans-serif;
   font-weight: 400;
   font-size: 34px;
@@ -285,7 +286,7 @@ footer {
   color: var(--dark-color);
 }
 
-.ikea-bottom h4 {
+.section-h4 {
   background: var(--brown-color);
   color: var(--white-color );
   font-weight: 700;
@@ -293,4 +294,24 @@ footer {
   line-height: 17px;
   text-transform: uppercase;
   padding: 5px 10px;
+}
+
+.premature-optimization {
+  position: relative;
+  background-color: var(--brown-color);
+}
+.premature-optimization-top {
+  flex-direction: row-reverse;
+}
+
+.premature-optimization .section-suptitle {
+  color: var(--light-white-color);
+}
+.premature-optimization-title {
+  background: var(--white-color);
+  color: var(--brown-color);
+}
+
+.white-color {
+  color: var(--white-color);
 }
