@@ -21,7 +21,7 @@
 
 @font-face {
   font-family: Neucha;
-  font-style: 400;
+  font-weight: 400;
   src: url("../assets/fonts/Neucha-Regular.ttf");
 }
 
@@ -47,6 +47,7 @@ body {
   font-size: 16px;
   font-family: "Open-Sans-Regular", sans-serif;
   line-height: 1.5em;
+  overflow-x: hidden;
 }
 
 h1,
@@ -54,6 +55,7 @@ h2,
 h3 {
   font-family: Neucha, sans-serif;
   line-height: 1.2em;
+  font-weight: 400;
 }
 
 h1 {
@@ -85,6 +87,9 @@ footer {
 
 .mt-30 {
   margin-top: 30px;
+}
+.p-24 {
+  padding: 24px;
 }
 .background-img::before {
   position: absolute;
@@ -146,7 +151,7 @@ footer {
 }
 
 .text {
-  width: 540px;
+  max-width: 540px;
   line-height: 26px;
 }
 
@@ -158,4 +163,91 @@ footer {
   background-color: var(--main-color);
   margin-top: 40px;
   display: inline-block;
+}
+
+.video-section {
+  height: 814px;
+  padding-bottom: 0;
+  position: relative;
+}
+
+.video-title {
+  text-align: center;
+}
+
+.video-subtitle {
+  text-align: center;
+  line-height: 26px;
+  color: #212529;
+}
+
+.video {
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -100px;
+}
+
+.nav-section {
+  background: var(--main-dark-color);
+  width: 100vw;
+  padding-top: 200px;
+}
+
+.nav-title {
+  font-size: 52px;
+  line-height: 62px;
+  padding: 0;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  row-gap: 20px;
+}
+.nav-item {
+  width: 350px;
+  /* max-height: 323px; */
+  height: 100%;
+  align-self: stretch;  
+  background: var(--light-color);
+}
+
+.nav-card {
+  height: 323px;
+}
+
+.item-title {
+  background: none;
+}
+
+.nav-title {
+  color: var(--white-color);
+}
+
+.card-number {
+  font-family: Neucha, sans-serif;
+  font-size: 64px;
+  line-height: 1;
+  color: var(--main-dark-color);
+}
+
+.card-title {
+  font-size: 34px;
+  line-height: 41px;
+  color: var(--main-color);
+  margin-top: 40px;
+}
+
+.card-text {
+  line-height: 26px;
+  color: var(--dark-color);
+  margin-top: 16px;
+}
+
+.nav-link {
+  display: block;
+  text-decoration: none;
 }
