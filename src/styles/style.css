@@ -21,16 +21,19 @@
 
 @font-face {
   font-family: Neucha;
+  font-style: 400;
   src: url("../assets/fonts/Neucha-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Open-Sans-Regular";
+  font-style: 400;
   src: url("../assets/fonts/OpenSans-Regular.ttf");
 }
 
 @font-face {
-  font-family: "Open Sans";
+  font-family: "Open-Sans-Bold";
+  font-style: 700;
   src: url("../assets/fonts/OpenSans-Bold.ttf");
 }
 
@@ -40,17 +43,15 @@ body {
   align-items: center;
 
   color: var(--dark-color);
-
-  font-weight: 400;
+  
   font-size: 16px;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open-Sans-Regular", sans-serif;
   line-height: 1.5em;
 }
 
 h1,
 h2,
 h3 {
-  font-weight: 400;
   font-family: Neucha, sans-serif;
   line-height: 1.2em;
 }
@@ -82,17 +83,10 @@ footer {
   color: var(--main-color);
 }
 
-.header {
-  position: relative;
-
-  width: 100%;
-
-  overflow: hidden;
-
-  background-color: var(--light-color);
+.mt-30 {
+  margin-top: 30px;
 }
-
-.header::before {
+.background-img::before {
   position: absolute;
   top: 0;
   right: 0;
@@ -107,56 +101,61 @@ footer {
   content: "";
 }
 
+.header {
+  position: relative;
+
+  width: 100%;
+
+  overflow: hidden;
+
+  background-color: var(--light-color);
+  z-index: 0;
+}
+
 .header-title {
   width: 100%;
 }
 
 .header-top {
-  position: relative;
-
   display: flex;
-  margin-bottom: 185px;
+
+}
+.header-image-box {
+  position: relative;
 }
 
-.header-img {
+.header-image {
   position: absolute;
   top: -45px;
-  right: -170px;
+  left: -280px;
 
   height: 525px;
+  z-index: 50;
 }
 
-.header-text-boxes {
+.header-bottom {
+  margin-top: 185px;
+}
+
+.texts-box {
+  position: relative;
   display: flex;
-
   column-gap: 30px;
+  z-index: 200;
+
 }
 
-.text-box {
+.text {
   width: 540px;
-
-  font-weight: 400;
-  font-size: 16px;
-  font-family: "Open Sans", sans-serif;
   line-height: 26px;
-}
-
-.mb-25 {
-  margin-bottom: 25px;
 }
 
 .header-link {
-  display: inline-block;
-  margin-top: 40px;
-  padding: 12px 24px;
-
-  color: var(--white-color);
-  font-weight: 700;
-  line-height: 26px;
-  text-transform: uppercase;
   text-decoration: none;
-
+  padding: 12px 24px;
+  font-family: "Open-Sans-Bold", sans-serif;
+  color: var(--white-color);
   background-color: var(--main-color);
-
-  cursor: pointer;
+  margin-top: 40px;
+  display: inline-block;
 }
