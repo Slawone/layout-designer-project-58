@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/style.css" />
   </head>
   <body>
-    <header class="header background-img">
+    <header class="header background-img" id="header">
       <div class="container">
         <div class="header-top">
           <div class="header-box">
@@ -28,7 +28,7 @@
             <div class="right-side-box">
               <p class="text">Вместе они формируют что-то вроде замкнутого цикла, и это может привести к длительной потере продуктивности, багам и бесконечному разочарованию.</p>
               <p class="text mt-30">Если мы сможем минимизировать воздействие одного или нескольких из этих факторов, то сможем сломать и цикл, а остатки нейтрализовать.</p>
-              <a href="#" class="header-link">Подробнее</a>
+              <a href="#nav-section" class="header-link">Подробнее</a>
             </div>
           </div>
         </div>
@@ -42,7 +42,7 @@
           <iframe class="video mt-30" width="919" height="569" src="https://www.youtube.com/embed/jie9AizBqss" frameborder="0" allowfullscreen></iframe>
         </div>
       </section>
-      <section class="nav-section">
+      <section class="nav-section" id="nav-section">
         <div class="container">
           <nav class="nav">
             <ul class="nav-list">
@@ -50,7 +50,7 @@
                 <h3 class="nav-title"><span class="orange-text">5 когнитивных <br> искажений</span> <br> о существовании <br> которых стоит <br> помнить</h3>
               </li>
               <li class="nav-item p-24">
-                <a href="#" class="nav-link">
+                <a href="#ikea-effect" class="nav-link">
                   <div class="nav-card">
                     <div class="card-number">1</div>
                     <h3 class="card-title">Эффект IKEA</h3>
@@ -59,7 +59,7 @@
                 </a>
                </li>
                <li class="nav-item p-24">
-                <a href="#" class="nav-link">
+                <a href="#premature-optimization" class="nav-link">
                   <div class="nav-card">
                     <div class="card-number">2</div>
                     <h3 class="card-title">Преждевременная оптимизация</h3>
@@ -68,7 +68,7 @@
                 </a>
                </li>
                <li class="nav-item p-24">
-                <a href="#" class="nav-link">
+                <a href="#distortion-of-novelty" class="nav-link">
                   <div class="nav-card">
                     <div class="card-number">3</div>
                     <h3 class="card-title">Искажение новизны</h3>
@@ -77,7 +77,7 @@
                 </a>
                </li>
                <li class="nav-item p-24">
-                <a href="#" class="nav-link">
+                <a href="#hyperbolic-depreciation" class="nav-link">
                   <div class="nav-card">
                     <div class="card-number">4</div>
                     <h3 class="card-title">Гиперболическое обесценивание</h3>
@@ -98,7 +98,7 @@
           </nav>
         </div>
       </section>
-      <section class="ikea background-img">
+      <section class="ikea background-img" id="ikea-effect">
         <div class="container">
           <div class="section-top">
             <div class="section-img-box">
@@ -125,7 +125,7 @@
           </div>
         </div>
       </section>
-      <section class="premature-optimization background-img">
+      <section class="premature-optimization background-img" id="premature-optimization">
         <div class="container">
            <div class="section-top premature-optimization-top">
             <div class="section-img-box">
@@ -152,7 +152,7 @@
           </div>
         </div>
       </section>
-      <section class="distortion-of-novelty background-img">
+      <section class="distortion-of-novelty background-img" id="distortion-of-novelty">
         <div class="container">
           <div class="section-top">
             <div class="section-img-box">
@@ -179,7 +179,7 @@
           </div>
         </div>
       </section>
-      <section class="hyperbolic-depreciation background-img">
+      <section class="hyperbolic-depreciation background-img" id="hyperbolic-depreciation">
         <div class="container">
            <div class="section-top hyperbolic-depreciation-top">
             <div class="section-img-box">
@@ -187,8 +187,8 @@
             </div>
             <div class="section-info-box">
               <div class="section-suptitle">Когнитивные искажения</div>
-              <h2 class="section-title white-color">Преждевременная оптимизация</h2>
-              <div class="section-text mt-30 white-color">Вы оптимизируете что-то задолго до того, как в этом появляется необходимость.</div>
+              <h2 class="section-title white-color">Гиперболическое обесценивание</h2>
+              <div class="section-text mt-30 white-color">Вы гонитесь за немедленной маленькой выгодой и игнорируете более крупную, недоступную сейчас, но доступную в будущем.</div>
             </div>
           </div>
           <div class="section-bottom mt-100">
@@ -196,11 +196,11 @@
             <div class="texts-box mt-20">
               <div class="left-side-box">
                 <p class="text white-color">
-                  Если вы добавите аэродинамический спойлер к своему старому автомобилю вместо ремонта мотора, то автомобиль не станет быстрее.
+                  Вы когда-нибудь откладывали написание теста? Ловили себя на использовании клавиш-стрелок в Vim? Поздравляю, у вас наблюдается гиперболическое обесценивание.
                 </p>
               </div>
               <div class="right-side-box">
-                <p class="text white-color">Отличный пример: писать максимально подтюненный и высокопроизводительный код для всего лишь экспериментального проекта.</p>
+                <p class="text white-color">Немедленная выгода от использования чего-то быстродоступного значительно смягчает боль, которую нужно перетерпеть, чтобы усвоить правильный синтаксис для перемещения на нужную строчку. Но как только вы поймёте как перемещаться быстрее, выгода в будущем намного выше. В итоге вы сохраните много времени.</p>
               </div>
             </div>
           </div>
@@ -209,6 +209,7 @@
     </main>
     <footer class="footer">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur ad sit doloremque omnis, dolorem dolor, molestias veniam illo nihil beatae dignissimos earum officia cum nemo quasi eos a cumque nobis autem ipsa ipsum! Exercitationem beatae, repellat optio ex praesentium quod earum qui, cum tempore quae molestias voluptatem voluptas veritatis magni?
+      <a href="#header" class="color-white">НАВЕРХ</a>
     </footer>
   </body>
 </html>
