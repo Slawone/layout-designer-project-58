@@ -312,6 +312,28 @@ footer {
   color: var(--brown-color);
 }
 
+.distortion-of-novelty {
+  position: relative;
+  background-color: var(--light-color);
+}
+
+.hyperbolic-depreciation {
+  position: relative;
+  background-color: var(--brown-color);
+}
+
+.hyperbolic-depreciation-top {
+  flex-direction: row-reverse;
+}
+
+.hyperbolic-depreciation .section-suptitle {
+  color: var(--light-white-color);
+}
+
 .white-color {
   color: var(--white-color);
+}
+
+.footer {
+  background: var(--dark-color);
 }
